@@ -13,11 +13,19 @@
 <h2>Scripts are an important part of GML and this section explains their use.</h2>
 <p>
 
-When you create a script, you want to access the arguments passed to it, either when using the script action, or when calling the script as a function from a program (or from another, or even the same script). These
-arguments are stored in the variables <tt>argument0</tt>, <tt>argument1</tt>, ..., <tt>argument15</tt>. So there can be at most 16 arguments. (Note that when calling the script from an action, only the first 
-5 arguments can be specified.) You can also use <tt>argument[0 ... 15]</tt> to reference the arguments passed to the script as an array.
+When you create a script, you want to access the arguments passed to it, either when using the script action, or when calling the script as a function from a program (or from another script). These arguments are 
+stored in the <i>built in</i> variables <tt>argument0</tt>, <tt>argument1</tt>, ..., etc... up to <tt>argument15</tt>. So there can be at most 16 arguments passed through to a script when called from code, 
+and if you are using the script D'n'D action then only the first 5 arguments can be specified.
 <br>
 <br>
+
+When using the <tt>argument0...15</tt> variables for a script, you must ensure that the script uses all the supplied arguments. For example if you have a script that takes two arguments and you only supply 
+one then you will get an error for that script. The same goes if you supply more arguments than you require. However you can supply a variable number of arguments to a script using the <i>built in</i> argument array, 
+<tt>argument[0 ... 15]</tt>. When passing in arguments as an array of values you can use <a href="argument_count.html"><tt>argument_count</tt></a> to find out how many there are and adapt the script 
+to use only those arguments supplied.
+<blockquote>
+	<i><b>NOTE: </b>You cannot mix the two types of argument variables when calling a script. You must use <b>either</b> <tt>argument0...15</tt> <b>or</b> argument[0...15]</b>.</i>
+</blockquote>
 
 <p>
 Scripts can also return a value, so that they can be used in expressions. For this end you use the return statement:
@@ -94,4 +102,6 @@ For more information on scripts please see <a href="../../001_Advanced%20Use/006
 return
 scripts
 arguments
+argument0...15
+argument[0...15]
 --> 

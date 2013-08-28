@@ -124,7 +124,7 @@ if inst != noone target = inst;<br>
 <p>
 <br>
 The above code is slightly more complex than previous ones due to it using a local variable. This variable is local to the <i>script</i> and not to the instance and so can be used and accessed by all instances 
-that are referrenced within the code block. So, in the code we have set it to the special <i>keyword</i> <b>noone</b> and then use the "with" construction to have every instance of obj_Ball check their 
+that are referenced within the code block. So, in the code we have set it to the special <i>keyword</i> <b>noone</b> and then use the "with" construction to have every instance of obj_Ball check their 
 "str" variable against that of the instance running the code block. If the value of the variable is larger, then they store their unique id in the "inst" local variable, meaning that at the end of the code, only the instance 
 with a value greater than the calling instance (or the <i>keyword</i> <b>noone</b> if none are larger) will be stored in the local variable inst. For more information on local variables see the section 
 <a href="Variables/index.html">Variables And variable Scope</a>.

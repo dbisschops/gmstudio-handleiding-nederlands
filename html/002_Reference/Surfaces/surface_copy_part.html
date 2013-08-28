@@ -10,7 +10,7 @@
 
 <h1>surface_copy_part</h1>
 
-<h2>Copies part of a source surface into a destination surface. (Without any form of blending.)</h2>
+<h2>Copies part of a source surface onto a destination surface (without any form of blending.)</h2>
 
 <h3>Syntax :</h3>
 <p class="code">surface_copy_part(destination, x, y, source, xs, ys, ws, hs);</p>
@@ -20,34 +20,34 @@
 </p>
 
 <div class="param">
-<table>
-	<tr><th>Argument</th><th>Description</th></tr>
-	
-	<tr><td>destination</td>
-	<td>The index of the surface to copy the other surface to.</td></tr>
-	
-	<tr><td>x</td>
-	<td>The x position to copy to.</td></tr>
-	
-	<tr><td>y</td>
-	<td>The y position to copy to.</td></tr>
-	
-	<tr><td>source</td>
-	<td>The surface to be copied.</td></tr>
-	
-	<tr><td>xs</td>
-	<td>The x position in the source surface to copy from.</td></tr>
-	
-	<tr><td>ys</td>
-	<td>The y position in the source surface to copy from.</td></tr>
-	
-	<tr><td>ws</td>
-	<td>The width of the area in the source surface to copy from.</td></tr>
-	
-	<tr><td>hs</td>
-	<td>The height of the area in the source surface to copy from.</td></tr>
+	<table>
+		<tr><th>Argument</th><th>Description</th></tr>
+		
+		<tr><td>destination</td>
+		<td>The index of the surface to copy the other surface to.</td></tr>
+		
+		<tr><td>x</td>
+		<td>The x position to copy to.</td></tr>
+		
+		<tr><td>y</td>
+		<td>The y position to copy to.</td></tr>
+		
+		<tr><td>source</td>
+		<td>The surface to be copied.</td></tr>
+		
+		<tr><td>xs</td>
+		<td>The x position in the source surface to copy from.</td></tr>
+		
+		<tr><td>ys</td>
+		<td>The y position in the source surface to copy from.</td></tr>
+		
+		<tr><td>ws</td>
+		<td>The width of the area in the source surface to copy from.</td></tr>
+		
+		<tr><td>hs</td>
+		<td>The height of the area in the source surface to copy from.</td></tr>
 
-</table>
+	</table>
 </div>
 
 <p>
@@ -55,7 +55,7 @@
 </p>
   
 <p>
-<b>Returns : </b>N/A
+<b>Returns: </b>N/A
 </p>
 
  <p>
@@ -82,7 +82,7 @@ exists using <a href="surface_exists.html"><tt>surface_exists</tt></a> before re
 
 <h3>Example :</h3>
 <p class="code">
-if view_current = 0<br>
+if view_current == 0<br>
 &nbsp;&nbsp;&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;view_copy(surf, 0, 0, 0, 0, view_xview[1] - mouse_x, view_yview[1] - mouse-y, temp_surf);<br>
 &nbsp;&nbsp;&nbsp;}<br>

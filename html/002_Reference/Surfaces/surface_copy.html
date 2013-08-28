@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
+	<head>
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-<title>surface_copy</title>
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<link rel="stylesheet" href="../../style.css" type="text/css" media="screen" title="style" charset="utf-8"/>
-</head>
+		<title>surface_copy</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../../style.css" type="text/css" media="screen" title="style" charset="utf-8"/>
+	</head>
 <body>
 
 <h1>surface_copy</h1>
@@ -20,22 +20,22 @@
 </p>
 
 <div class="param">
-<table>
-	<tr><th>Argument</th><th>Description</th></tr>
-	
-	<tr><td>destination</td>
-	<td>The index of the surface to copy the other surface to.</td></tr>
-	
-	<tr><td>x</td>
-	<td>The x position to copy to.</td></tr>
-	
-	<tr><td>y</td>
-	<td>The y position to copy to.</td></tr>
-	
-	<tr><td>source</td>
-	<td>The surface to be copied.</td></tr>
+	<table>
+		<tr><th>Argument</th><th>Description</th></tr>
+		
+		<tr><td>destination</td>
+		<td>The index of the surface to copy the other surface to.</td></tr>
+		
+		<tr><td>x</td>
+		<td>The x position to copy to.</td></tr>
+		
+		<tr><td>y</td>
+		<td>The y position to copy to.</td></tr>
+		
+		<tr><td>source</td>
+		<td>The surface to be copied.</td></tr>
 
-</table>
+	</table>
 </div>
 
 <p>
@@ -43,7 +43,7 @@
 </p>
   
 <p>
-<b>Returns : </b>N/A
+<b>Returns: </b>N/A
 </p>
 
  <p>
@@ -58,7 +58,7 @@ If the destination surface already has information this will be over-written by 
 <br>
 
 <i><b>NOTE : </b>When working with surfaces there is the possibility that they can cease to exist at any time due to them being stored in vRam. You should <b>ALWAYS</b> check that a surface 
-exists using <a href="surface_exists.html"><tt>surface_exists</tt></a> before referencing them directly. For futher information see <a href="index.html">Surfaces</a>.</i>
+exists using <a href="surface_exists.html"><tt>surface_exists</tt></a> before referencing them directly. For further information see <a href="index.html">Surfaces</a>.</i>
 <br>
 <br>
 
@@ -68,9 +68,9 @@ exists using <a href="surface_exists.html"><tt>surface_exists</tt></a> before re
 
 <h3>Example :</h3>
 <p class="code">
-if view_current = 0<br>
+if view_current == 0<br>
 &nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;view_copy(surf, 0, 0, temp_surf);<br>
+&nbsp;&nbsp;&nbsp;surface_copy(surf, 0, 0, temp_surf);<br>
 &nbsp;&nbsp;&nbsp;}<br>
 else<br>
 &nbsp;&nbsp;&nbsp;{<br>
