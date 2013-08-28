@@ -20,7 +20,7 @@ trick that is used to convert a vector of length <i>n</i> to a vector of length 
 
 <p>
 To calculate a normalised vector, we must first have the original vector components, then use them to get the length of the vector. We then divide each of the vector components by this length to get the normalised 
-vector componets which form the normalised vector in which the sum of the squares of all coordinates is equal to 1. Here's how :<br>
+vector components which form the normalised vector in which the sum of the squares of all coordinates is equal to 1. Here's how :<br>
 <br>
 
 <img class="center" src="2d_norm_vector_image_1.png"></img>
@@ -45,7 +45,7 @@ len = sqr(vx<sup>2</sup> + vy<sup>2</sup>) = sqr(36 + 9) = sqr(45) = 6.708203932
 
 <p>
 <br>
-Now, that gives us the exact length of the vector <i>a</i>, so lets use that to normalise the two vector components <i>vx</i> and <i>vy</i> :<br>
+Now, that gives us the exact length of the vector <i>a</i>, so let's use that to normalise the two vector components <i>vx</i> and <i>vy</i> :<br>
 <br>
 
 <p class="code">
@@ -56,7 +56,7 @@ a = 1<br>
 
 <p>
 <br>
-Great! We have now normalised the components of the vector! But of what <i>practical</i> use is that in the context of <i>GameMaker:Studio</i>? Okay, lets give you a practical example...
+Great! We have now normalised the components of the vector! But of what <i>practical</i> use is that in the context of <i>GameMaker:Studio</i>? Okay, let's give you a practical example...
 </p>
 
 <p>
@@ -66,7 +66,7 @@ Say you have a game where the player has to shoot at an enemy and you need to kn
 <img class="center" src="2d_norm_vector_image_2.png"></img>
 
 <p>
-For this you would use the player and enemy coordinates to get the vector components and the length, then you would normalise them to get a value betwen 0 and 1 which you would finally multiply by the speed you wish the bullet to travel 
+For this you would use the player and enemy coordinates to get the vector components and the length, then you would normalise them to get a value between 0 and 1 which you would finally multiply by the speed you wish the bullet to travel 
 at each step. These final two values you would then store and add onto the starting x and y coordinates each step. Sound complicated? It's not, look (values have been rounded to one decimal place for simplicity) :<br>
 <br>
 

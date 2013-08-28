@@ -80,6 +80,17 @@ These functions deal with the generation of resources at run time.
 	
 	<tr class="alt"><td>background_add_background</td><td>Adds the background stored the file fname to the set of background resources. The file must be a .gmbck file that is saved in the 
 	background property form in GameMaker.</td></tr>
+	
+	<tr><td>sprite_add_sprite</td><td>Adds the sprite stored the file fname to the set of sprite resources. The file must be a .gmspr file that is saved in the sprite property form in GameMaker.</td></tr>
+	
+	<tr class="alt"><td>background_add_background</td><td>Adds the background stored the file fname to the set of background resources. The file must be a .gmbck file that is saved in the 
+	background property form in GameMaker.</td></tr>
+		
+	<tr><td>sprite_create_from_screen</td><td>Creates a sprite by copying the given area from the screen.</td></tr>
+
+	<tr class="alt"><td>sprite_add_from_screen</td><td>Adds an area of the screen as a next subimage to the sprite with index ind.</td></tr>
+	
+	<tr><td>background_create_from_screen</td><td>Creates a background by copying the given area from the screen.</td></tr>
 		
 </table>
 </div>
@@ -109,8 +120,8 @@ These functions deal with the generation of resources at run time.
 
 <h3> <b>Why These Are Obsolete</b> </h3>
 <p>
-These functions cannot be used any more due to changes in the underlying runner that <i>GameMaker:Studio</i> uses to generate the device specific packages making it impossible to generate objects and code 
-"on the fly".
+These functions cannot be used any more due to changes in the underlying runner that <i>GameMaker:Studio</i> uses to generate the device specific packages making it impossible to generate objects, images or 
+code "on the fly" as was done before.
 <br>
 <br>
 
@@ -154,8 +165,12 @@ variable_local_set (obsolete)
 variable_local_array_set (obsolete)
 variable_local_array2_set (obsolete)
 
-sprite_save_sprite (obsolete)
-background_save_background (obsolete)
+sprite_add_sprite (obsolete)
+sprite_create_from_screen (obsolete)
+sprite_add_sprite_from_screen (obsolete)
+background_add_background (obsolete)
+background_create_from_screen (obsolete)
+
 execute_string (obsolete)
 execute_file (obsolete)
 execute_program (obsolete)

@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
+	<head>
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-	<title>get_integer</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=9" />
-	<link rel="stylesheet" href="../../style.css" type="text/css" media="screen" title="style" charset="utf-8"/>
-</head>
+		<title>get_integer</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link rel="stylesheet" href="../../style.css" type="text/css" media="screen" title="style" charset="utf-8"/>
+	</head>
 <body>
 
 <h1>get_integer</h1>
@@ -20,16 +20,17 @@
 </p>
 
 <div class="param">
-<table>
-	<tr><th>Argument</th><th>Description</th></tr>
+	<table>
 	
-	<tr><td>str</td>
-	<td>The string to show in the pop-up message.</td></tr>
-	
-	<tr class="alt"><td>def</td>
-	<td>The default value in the text box.</td></tr>
-	
-</table>
+		<tr><th>Argument</th><th>Description</th></tr>
+		
+		<tr><td>str</td>
+		<td>The string to show in the pop-up message.</td></tr>
+		
+		<tr class="alt"><td>def</td>
+		<td>The default value in the text box.</td></tr>
+		
+	</table>
 </div>
 
 <p>
@@ -51,7 +52,10 @@ if nothing has been entered.
 <br>
 <br>
 
-<i><b>NOTE : </b>THIS FUNCTION IS FOR DEBUG USE ONLY.</i>
+<br>
+<br>
+<i><b>NOTE: </b>THIS FUNCTION IS FOR DEBUG USE ONLY. Should you require this functionality in your final game, please use <a href="../Asynchronous%20Functions/get_integer_async.html">
+<tt>get_integer_async</tt></a>.</i>
 <br>
 <br>
 
@@ -61,10 +65,10 @@ if nothing has been entered.
 
 <h3>Example :</h3>
 <p class="code">
-score += get_integer("Add to the score", 500);
+global.level = get_integer("Level to test?", 1);
 </p>
 <p>
-The above code will display a message propting the user to add an amount to the variable "score". If no amount is entered then the default value of 500 will be returned and added to the variable.
+The above code will display a message prompting the user to select a level for testing. The return value will be stored in the global variable "global.level".
 </p>
   
 <p>

@@ -47,7 +47,7 @@
 With this function you can set the persistence of a specific object. A persistent object is "carried over" from room to room and maintains it's properties at all times (for more information on persistence see 
 <a href="../../../000_Using%20GameMaker/008_Defining%20objects.html">Defining Objects</a>). Setting the persistence of the object means that all instances of this object that are created <i>after the 
 persistence has been changed</i> will be created persistent, while instances that are already in the room may not be affected. Please note that this is not an instance function! You can set the 
-persistence of individual instances but if you change the persistence of an object, all instances that are created of that object will start with persitence.
+persistence of individual instances but if you change the persistence of an object, all instances that are created of that object will start with persistence.
 <br>
 
 <p>
@@ -60,7 +60,7 @@ if room == rm_final object_set_persistent(obj_Player, 0);
 instance_create(32, 32, obj_Player);
 </p>
 <p>
-The above code checks to see in which room the instance is currently in and if it is in the specified "rm_final" then it sets the persistance of the object "obj_Player" to false and then creates the instance.
+The above code checks to see in which room the instance is currently in and if it is in the specified "rm_final" then it sets the persistence of the object "obj_Player" to false and then creates the instance.
 </p>
   
 <p>

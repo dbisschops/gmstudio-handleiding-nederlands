@@ -45,7 +45,7 @@ score += 10; <br>
 <p>
 The variable "score" will be incremented <i>even though the <tt>instance_destroy</tt> function has been called, and the instance will finally be removed from your game at the end of the event. Be careful of 
 this, as if you have (for example) created a dynamic resource for the instance, like a data structure, then destroyed that resource in the destroy event, if there are any references to it after the destroy function 
-or action has been performed then you will get an "unkown resource" error, as the destroy event removed it from the game.
+or action has been performed then you will get an "unknown resource" error, as the destroy event removed it from the game.
 <br>
 <br>
 

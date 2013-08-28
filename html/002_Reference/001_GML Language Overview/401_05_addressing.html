@@ -16,7 +16,7 @@
 In the sections dedicated to <a href="Variables/index.html">variables</a> you found out how to create and create and use variables within a single instance, or on a global scope, but what happens if 
 you want to one instance to access a variable in another, different one? There are many cases when you may want to do this, for example in a collision with a bullet object, you may want to find out how much 
 damage the bullet does by accessing a variable in the bullet, or you might want to stop the motion of all the balls in a puzzle , or you might want to move the main character to a particular position, or any 
-number of other situations you typically come across in any game. Thankfully the GameMaker Language comes equiped with mechanisms to achieve this.
+number of other situations you typically come across in any game. Thankfully the GameMaker Language comes equipped with mechanisms to achieve this.
 <br>
 <br>
 
@@ -131,7 +131,7 @@ nnn.direction = point_direction(x, y, obj_Player.x, obj_Player.y);<br>
 <p>
 <br>
 
-See how we set it's variables ising the point method outlined above? But what about the player object? How will it detect the damage that it has to take? By using <b>other</b> in the collision event, of course!
+See how we set it's variables using the point method outlined above? But what about the player object? How will it detect the damage that it has to take? By using <b>other</b> in the collision event, of course!
 <br>
 <br>
 <p class="code">
@@ -147,7 +147,7 @@ variables, or even create new ones, using <b>other</b> in the collision event to
 <br>
 <p class="code">
 other.mana += 10; //add ten to the other instance "mana" variable<br>
-other.hit = true; //set the other instance variable "hit" to true, ceating it if the variable doesn't already exist<br>
+other.hit = true; //set the other instance variable "hit" to true, creating it if the variable doesn't already exist<br>
 </p>
 
 <p>

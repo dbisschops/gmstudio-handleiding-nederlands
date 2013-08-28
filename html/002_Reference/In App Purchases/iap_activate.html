@@ -42,9 +42,9 @@
 <h3>Description</h3>
 <p>
 This function enables support for making in-app purchases and prepares <i>GameMaker:Studio</i> by supplying the product server index for your game, or a ds_list that holds a series of 
-ds_maps with the information on each available purchase. If you are using a proprietry product server, the product index should be as a string and use the reverse URL format that is common 
+ds_maps with the information on each available purchase. If you are using a proprietary product server, the product index should be as a string and use the reverse URL format that is common 
 to device packages, eg: "com.MacSweeney Games.CatchTheClown", and this will be used to query your server for the set of available purchases for the game (for further information on setting 
-up a proprietry server, please see the section <a href="../../001_Advanced%20Use/Global%20game%20settings/In%20App%20Purchases%20Tab.html">Global Game Settings - In App Purchases Tab.</a>
+up a proprietary server, please see the section <a href="../../001_Advanced%20Use/Global%20game%20settings/In%20App%20Purchases%20Tab.html">Global Game Settings - In App Purchases Tab.</a>
 <br>
 <br>
 
@@ -94,7 +94,7 @@ ds_map_destroy(purchase1);<br>
 ds_list_destroy(purchaseList);<br>
 </p>
 <p>
-The above code will create a ds_list and a ds_map, which is then populated by the information for making a purchase. this map is added to the list and then actiavted as an available purchase 
+The above code will create a ds_list and a ds_map, which is then populated by the information for making a purchase. this map is added to the list and then activated as an available purchase 
 for the game. finally the ds_list and ds_map are removed to prevent memory leaks as they are no longer needed.
 </p>
 <p>

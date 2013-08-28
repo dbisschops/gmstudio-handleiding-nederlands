@@ -60,7 +60,13 @@ For a revolute joint you can use the following constant (as well as the <i>motor
 	
 	<tr><td>phy_joint_angle</td><td>The angle that a line between the two anchor points of the joint makes. This is calculated using the <i>physics world</i> coordinates
 	<br>(<b>not</b> the <i>GameMaker:Studio</i> room coordinates) in degrees.</tr>
-		
+
+	<tr class= "alt"><td>phy_joint_angle_limits</td><td>Enable or disable angle limiting for the joint. Set the value to <tt>true</tt> to enable or <tt>false</tt> 
+	to disable.</tr>
+
+	<tr><td>phy_joint_upper_angle_limit</td><td>The upper angle limit for the joint in degrees.</tr>
+
+	<tr class ="alt"><td>phy_joint_lower_angle_limit</td><td>The lower angle limit for the joint in degrees.</tr>	
 </table>
 </div>
 
@@ -99,7 +105,7 @@ For a distance joints you can use the following constants (as well as those for 
 
 	<tr><td>phy_joint_damping_ratio</td><td>The damping ratio is non-dimensional and defines the "springiness" of the joint. The value for this constant is typically between 0 and 1, but can be larger, and 
 	at 1, the damping is critical meaning that all oscillations should vanish.</li>
-	<tr class="alt"><td>phy_joint_frequency</td><td>This will return (or set) the ocillation frequency for the joint, in hertz, and typically the frequency should be less than a half the frequency of the time step, 
+	<tr class="alt"><td>phy_joint_frequency</td><td>This will return (or set) the oscillation frequency for the joint, in hertz, and typically the frequency should be less than a half the frequency of the time step, 
 	as set by the function <a href="../The%20Physics%20World/physics_world_update_speed.html"><tt>physics_world_update_speed</tt></a>.</li>
 		
 </table>
@@ -145,4 +151,7 @@ phy_joint_reaction_force_y
 phy_joint_reaction_torque
 phy_joint_speed
 phy_joint_translation
+phy_joint_lower_angle_limit
+phy_joint_upper_angle_limit 
+phy_joint_angle_limits
 --> 

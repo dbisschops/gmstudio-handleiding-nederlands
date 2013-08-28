@@ -51,8 +51,8 @@ but they maintain three common arguments which we will explain here :
 		<li><b>obj</b>. This is where we specify the object that the function has to check for a collision with. It can be an instance id, an object type, or the special GM keyword <b>all</b>. It is also worth 
 		noting that if the object type chosen is the designated <b>parent</b> of other objects, then all <i>children</i> of that object will be included in this check too.</li>
 		<br>
-		<li><b>prec</b>. This can be either <tt>true</tt> or <tt>false</tt> and relates to the precison of the collision checking. If set to <tt>true</tt>, then precise collisions are to be calculated (but only if 
-		the object being checked for has "precise" marked for its collision detection in its mask properties) which is a slightly more complex task for the cpu and so should be used with caution. If <tt>false</tt> then 
+		<li><b>prec</b>. This can be either <tt>true</tt> or <tt>false</tt> and relates to the precision of the collision checking. If set to <tt>true</tt>, then precise collisions are to be calculated (but only if 
+		the object being checked for has "precise" marked for its collision detection in its mask properties) which is a slightly more complex task for the CPU and so should be used with caution. If <tt>false</tt> then 
 		collisions will be calculated based on the bounding box of the object to be checked for.</li>
 		<br>
 		<li><b>notme</b>. You may need to check for collisions with an object that has the same index as the object that runs the code, so to prevent the code finding a collision with itself, you can set 

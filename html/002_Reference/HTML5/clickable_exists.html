@@ -56,11 +56,11 @@ will get an error causing <i>GameMaker:Studio</i> to close.
 <p class="code">
 if !clickable_exists(home_but)<br>
 &nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;home_but = clickable_add(32, 32, sprite_get_tpe(spr_MS_Home, 0), "http://macsweeney_games.com", "_blank", "width=700, height=500, menubar=0, toobar=0, scrollbars=0");<br>
+&nbsp;&nbsp;&nbsp;home_but = clickable_add(32, 32, sprite_get_tpe(spr_MS_Home, 0), "http://macsweeney_games.com", "_blank", "width=700, height=500, menubar=0, toolbar=0, scrollbars=0");<br>
 &nbsp;&nbsp;&nbsp;}<br>
 </p>
 <p>
-The above code checks the variable "home_but" to see if it already exists, and if it does not it creates a clickable DOM icon at the positon (32, 32) of the page that the game canvas is running on. The icon uses 
+The above code checks the variable "home_but" to see if it already exists, and if it does not it creates a clickable DOM icon at the position (32, 32) of the page that the game canvas is running on. The icon uses 
 the sprite referenced from the texture page as "spr_MS_Home" and when clicked the icon will open a new window for the specified URL and with the defined properties for that window.
 </p>
 
