@@ -151,6 +151,19 @@ building a final executable package.
 <br>
 <br>
 
+<h3>Clearing the Cache</h3>
+<p>
+<i>GameMaker:Studio</i> has an <b>asset compiler cache</b> which stores sprites, sounds, object data, etc... between builds of your game. This greatly increases build time as each asset only has to be 
+re-created only when it has changed. However, this cache can become "stale" and odd behaviour can creep into your games, like the wrong sound playing when something happens, or graphics becoming corrupted. 
+When this happens it's time to clear the asset compiler cache using the "broom" icon at the top of the screen:
+
+<img class="center" src="../images/Debug_ClearCache.png">
+
+This will clear all cached files and the next test run or final build will recreate all the files for your game from scratch. Note that you should generally do this anyway every few builds, and <b>always</b> before 
+building a final executable package.
+<br>
+<br>
+
 
 <p>
 <br>
