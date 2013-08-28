@@ -6,25 +6,55 @@ In file ./000_Using GameMaker/Rooms/Backgrounds Tab.html
 	../../images/color_picker.png
 	./images/color_picker.png
 
+In file ./000_Using GameMaker/Rooms/Objects Tab.html
+	../../images/form_room_controls.png
+	./images/form_room_controls.png
+
+In file ./000_Using GameMaker/Rooms/Settings Tab.html
+	../../images/form_Instance_Order.png
+	./images/form_Instance_Order.png
+
 In file ./000_Using GameMaker/Versions.html
 	003_Getting started.html.html
 	./000_Using GameMaker/003_Getting started.html.html
+
+---- Fixed case mismatch
+
+In file ./001_Advanced Use/011_Debugging.html
+	../images/Debug_ClearCache.png
+	./images/Debug_ClearCache.png
 
 In file ./001_Advanced Use/Extensions/Creating Extensions.html
 	Creating_Extensions.html
 	./001_Advanced Use/Extensions/Creating_Extensions.html
 
-In file ./001_Advanced Use/Global game settings/Android Tab.html
-	Android_Amazon_Tab.png
-	./001_Advanced Use/Global game settings/Android_Amazon_Tab.png
+In file ./001_Advanced Use/Global game settings/Advertising Tab.html
+	Extras Tab.html
+	./001_Advanced Use/Global game settings/Extras Tab.html
 
-In file ./001_Advanced Use/Global game settings/Win8 Tab.html
-	Tizen	Tab.html
-	./001_Advanced Use/Global game settings/Tizen	Tab.html
+In file ./001_Advanced Use/Global game settings/index.html
+	Extras Tab.html
+	./001_Advanced Use/Global game settings/Extras Tab.html
+
+In file ./001_Advanced Use/Global game settings/index.html
+	Licensing Tab.html
+	./001_Advanced Use/Global game settings/Licensing Tab.html
+
+In file ./001_Advanced Use/index.html
+	Global game settings/Licensing Tab.html
+	./001_Advanced Use/Global game settings/Licensing Tab.html
 
 In file ./001_Advanced Use/index.html
 	More About Async Events/User Interactions.html
 	./001_Advanced Use/More About Async Events/User Interactions.html
+
+In file ./001_Advanced Use/More About Async Events/index.html
+	Social.html
+	./001_Advanced Use/More About Async Events/Social.html
+
+In file ./001_Advanced Use/More About Async Events/Steam.html
+	Social.html
+	./001_Advanced Use/More About Async Events/Social.html
 
 In file ./001_Advanced Use/More about sprites/Edit Menus/Edit Menu.html
 	Editing Sub-images.html
@@ -38,9 +68,19 @@ In file ./001_Advanced Use/More about sprites/Edit Menus/Images Menu.html
 	colorize_Image.png
 	./001_Advanced Use/More about sprites/Edit Menus/colorize_Image.png
 
+In file ./001_Advanced Use/More about sprites/Editing Sprites.html
+	PreMultiply.png
+	./001_Advanced Use/More about sprites/PreMultiply.png
+
 In file ./001_Advanced Use/More about sprites/index.html
 	../Global game settings/007_Texture Groups.html
 	./001_Advanced Use/Global game settings/007_Texture Groups.html
+
+In file ./001_Advanced Use/Preferences/Android Preferences.html
+	Android_Prefs_SDK.png
+	./001_Advanced Use/Preferences/Android_Prefs_SDK.png
+
+---- Fixed case mismatch
 
 In file ./002_Reference/Mouse, Keyboard and Other Controls/index.html
 	../005_Game Graphics/index.html
@@ -58,9 +98,21 @@ In file ./002_Reference/Mouse, Keyboard and Other Controls/Virtual Keys/index.ht
 	../005_Game Graphics/index.html
 	./002_Reference/Mouse, Keyboard and Other Controls/005_Game Graphics/index.html
 
+---- Fixed case mismatch
+
+In file ./002_Reference/001_GML Language Overview/argument_count.html
+	argument0.html
+	./002_Reference/001_GML Language Overview/argument0.html
+
+---- Fixed case mismatch
+
 In file ./002_Reference/017_Obsolete Functions/Obsolete Miscellaneous Functions.html
 	*.html
 	./002_Reference/017_Obsolete Functions/*.html
+
+In file ./002_Reference/Advertising and Analytics/index.html
+	../../001_Advanced Use/Global game settings/Extras Tab.html
+	./001_Advanced Use/Global game settings/Extras Tab.html
 
 In file ./002_Reference/Advertising and Analytics/index.html
 	../../001_Advanced UseGlobal game settingsAdvertising Tab.html
@@ -142,13 +194,23 @@ In file ./002_Reference/Game Assets/Backgrounds/Background Tiles/index.html
 	Setting_Up_GM.html
 	./002_Reference/Game Assets/Backgrounds/Background Tiles/Setting_Up_GM.html
 
+In file ./002_Reference/Game Assets/Fonts/font_replace_sprite.html
+	font_replace_sprite_ext.html
+	./002_Reference/Game Assets/Fonts/font_replace_sprite_ext.html
+
 In file ./002_Reference/Game Assets/Fonts/index.html
 	Setting_Up_GM.html
 	./002_Reference/Game Assets/Fonts/Setting_Up_GM.html
 
+In file ./002_Reference/Game Assets/Fonts/index.html
+	font_replace_sprite_ext.html
+	./002_Reference/Game Assets/Fonts/font_replace_sprite_ext.html
+
 In file ./002_Reference/Game Assets/index.html
 	Setting_Up_GM.html
 	./002_Reference/Game Assets/Setting_Up_GM.html
+
+---- Fixed wrong path
 
 In file ./002_Reference/Game Assets/Sounds/index.html
 	Setting_Up_GM.html
@@ -222,9 +284,59 @@ In file ./002_Reference/Rooms/index.html
 	Setting_Up_GM.html
 	./002_Reference/Rooms/Setting_Up_GM.html
 
+---- Fixed wrong path (2)
+
+In file ./002_Reference/Shaders/shader_is_compiled.html
+	shaders_are_supported.html
+	./002_Reference/Shaders/shaders_are_supported.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_login.html
+	../../../001_Advanced Use/More About Async Events/Social.html
+	./001_Advanced Use/More About Async Events/Social.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_show_leaderboards.html
+	achievement_show_challenge_notifications.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_show_challenge_notifications.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	../../../001_Advanced Use/More About Async Events/Social.html
+	./001_Advanced Use/More About Async Events/Social.html
+
 In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
 	../016_Misc functions/index.html
 	./002_Reference/Social Gaming/016_Misc functions/index.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	achievement_get_challenges.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_get_challenges.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	achievement_get_pic.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_get_pic.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	achievement_load_friends.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_load_friends.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	achievement_load_leaderboard.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_load_leaderboard.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	achievement_load_progress.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_load_progress.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	achievement_reset.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_reset.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	achievement_send_challenge.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_send_challenge.html
+
+In file ./002_Reference/Social Gaming/Achievements and Leaderboards/index.html
+	achievement_show_challenge_notifications.html
+	./002_Reference/Social Gaming/Achievements and Leaderboards/achievement_show_challenge_notifications.html
 
 In file ./002_Reference/Social Gaming/Facebook/index.html
 	../016_Misc functions/index.html
@@ -254,6 +366,14 @@ In file ./002_Reference/Windows And Views/index.html
 	../The Window/index.html
 	./002_Reference/The Window/index.html
 
+In file ./002_Reference/Windows And Views/The Game Window/index.html
+	window_has_focus.html
+	./002_Reference/Windows And Views/The Game Window/window_has_focus.html
+
+In file ./002_Reference/Windows And Views/The Game Window/window_set_cursor.html
+	window_has_focus.html
+	./002_Reference/Windows And Views/The Game Window/window_has_focus.html
+
 In file ./002_Reference/Windows And Views/Views/index.html
 	Setting_Up_GM.html
 	./002_Reference/Windows And Views/Views/Setting_Up_GM.html
@@ -269,4 +389,12 @@ In file ./002_Reference/Windows8/Windows 8 Live Tile Templates.html
 In file ./002_Reference/Windows8/Windows 8 Phone/index.html
 	../016_Misc functions/index.html
 	./002_Reference/Windows8/016_Misc functions/index.html
+
+In file ./002_Reference/Windows8/Windows 8 Phone/index.html
+	winphone_license_trial_version.html
+	./002_Reference/Windows8/Windows 8 Phone/winphone_license_trial_version.html
+
+In file ./002_Reference/Windows8/Windows 8 Phone/winphone_tile_small_background_image.html
+	winphone_license_trial_version.html
+	./002_Reference/Windows8/Windows 8 Phone/winphone_license_trial_version.html
 
