@@ -9,7 +9,7 @@
 
 <h1>draw_highscore</h1>
   
-<h2>Draws the highscore table in the room in the indicated box using the current font.</h2>
+<h2>Draws the highscore table string in the room filling the indicated box size using the currently set font and draw colour.</h2>
   
 <h3>Syntax :</h3>
 <p class="code">draw_highscore( x1, y1, x2, y2 );</p>
@@ -51,7 +51,7 @@
 <h3>Description</h3>
 <p>
 This simple function will draw the current list of internally stored high scores using the currently set font, color and alpha values within the specified rectangle. You provide the coordinates 
-for the upper left corner and lower right corner of the rectangular are to draw the text, and <i>GameMaker:Studio</i> will take care of the rest, with spacing and position being done 
+for the upper left corner and lower right corner of the rectangular area to draw the text, and <i>GameMaker:Studio</i> will take care of the rest, with spacing and position being done 
 automatically.
 <br>
 <br>
@@ -62,7 +62,7 @@ automatically.
 
 <h3>Example :</h3>
 <p class="code">
-draw_highscore(100, 100, room_width - 100, room_height -100);
+draw_highscore(100, 100, room_width - 100, room_height - 100);
 </p>
 <p>
 This would draw the highscore table in a rectangle in the middle of the room with a 100px border.

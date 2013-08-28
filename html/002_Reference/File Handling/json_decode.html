@@ -30,7 +30,7 @@
 </p>
   
 <p>
-<b>Returns : </b>ds_map id
+<b>Returns : </b>ds_map id or -1 if it fails
 </p>
 
  <p>
@@ -41,20 +41,31 @@
 <p>
 JSON (JavaScript Object Notation) is a lightweight data-interchange format which is easy for to read and write, for both people and machines. It is built on two basic structures :
 <blockquote>
-<ul>
-	<li>A collection of name/value pairs, called a <a href="../Data%20Structures/DS%20Maps/index.html"><tt>ds_map</tt></a> in <i>GameMaker:Studio</i> but also known as a "dictionary" or "object".
-	<li>An ordered list of values, called a <a href="../Data%20Structures/DS%20Lists/index.html"><tt>ds_list</tt></a> in <i>GameMaker:Studio</i> but this can also be called an "array" or "sequence".
-</ul>
+	<ul>
+		<li>A collection of name/value pairs, called a <a href="../Data%20Structures/DS%20Maps/index.html"><tt>ds_map</tt></a> in <i>GameMaker:Studio</i> but also known as a "dictionary" or "object".
+		<li>An ordered list of values, called a <a href="../Data%20Structures/DS%20Lists/index.html"><tt>ds_list</tt></a> in <i>GameMaker:Studio</i> but this can also be called an "array" or "sequence".
+	</ul>
 </blockquote>
 <p>
-With this function, you can decode a piece of JSON and convert it into a <tt>ds_map</tt>, ready for use in <i>GameMaker:Studio</i>, and if the JSON decode to have a heirarchy of lists and maps within 
-the central ds_map, these are decoded too and also created for you. If the string you are trying to decode is <i>not</i> valid, then a ds_map is still created for you, but it will contain only one key ("default"), 
-and it will contain the entire input string as that keys value. Normally you would know what keys the JSON decode to, but if not then you can use the <a href="../Data%20Structures/DS%20Maps/ds_map_size.html">
-<tt>ds_map_size</tt></a>, <a href="../Data%20Structures/DS%20Maps/ds_map_find_first.html"><tt>ds_map_find_first</tt></a> and <a href="../Data%20Structures/DS%20Maps/ds_map_find_next.html">
-<tt>ds_map_find_next</tt></a> functions to parse the map and get the neccessary information.
+With this function, you can decode a piece of JSON and convert it into a <tt>ds_map</tt>, ready for use in <i>GameMaker:Studio</i>. If the JSON to be decoded requires a hierarchy of lists and maps within 
+the central ds_map, these are decoded too and also created for you, using the following rules:
+<blockquote>
+	<ul>
+		<li><i>Json is a single value</i> - returns a ds_map with a single entry "default" that is the value
+		<li><i>Json is an array of objects or values</i> - returns a ds_map with a single entry "default" that is a ds_list of the objects or values
+		<li><i>Json is an object</i> - returns a ds_map that has the object entries in it
+	</ul>
+</blockquote>
+
+<p> 
+Normally you would know what keys the JSON decode to, but if not then you can use the <a href="../Data%20Structures/DS%20Maps/ds_map_size.html"><tt>ds_map_size</tt></a>, 
+<a href="../Data%20Structures/DS%20Maps/ds_map_find_first.html"><tt>ds_map_find_first</tt></a> and <a href="../Data%20Structures/DS%20Maps/ds_map_find_next.html"><tt>ds_map_find_next</tt></a> 
+functions to parse the map and get the necessary information.
 <br>
 <br>
 
+<br>
+<br>
 <i><b>Note : </b>Even though GameMaker:Studio creates the necessary ds_maps and lists, it is <b>up to you</b> to destroy them when you are finished so as to prevent memory leaks. </i>
 <br>
 <br>
@@ -65,29 +76,25 @@ and it will contain the entire input string as that keys value. Normally you wou
 
 <h3>Example :</h3>
 <p class="code">
-var map;<br>
-map = json_decode( argument0 );<br>
-if ds_map_exists(map, "default")<br>
+var resultMap = json_decode(requestResult);<br>
+var list = ds_map_find_value(resultMap, "default");<br>
+var size = ds_list_size(list);<br>
+for (var n = 0; n &lt; ds_list_size(list); ++n;)<br>
 &nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;var map = ds_list_find_value(list, n);<br>
+&nbsp;&nbsp;&nbsp;var curr = ds_map_find_first(map);<br>
+&nbsp;&nbsp;&nbsp;while (is_string(curr))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;global.Name[n] =  ds_map_find_value(map, "name");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;curr = ds_map_find_next(map, curr);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
 &nbsp;&nbsp;&nbsp;ds_map_destroy(map);<br>
-&nbsp;&nbsp;&nbsp;return false;<br>
 &nbsp;&nbsp;&nbsp;}<br>
-else<br>
-&nbsp;&nbsp;&nbsp;{<br>
-&nbsp;&nbsp;&nbsp;global.Name =  ds_map_find_value(map, "name");<br>
-&nbsp;&nbsp;&nbsp;global.Scr = ds_map_find_value(map, "score");<br>
-&nbsp;&nbsp;&nbsp;global.Hiscores = ds_list_create();<br>
-&nbsp;&nbsp;&nbsp;ds_list_copy(global.Hiscores, ds_map_find_value(map, "scorelist"));<br>
-&nbsp;&nbsp;&nbsp;ds_list_destroy(ds_map_find_value(map, "scorelist"));<br>
-&nbsp;&nbsp;&nbsp;ds_map_destroy(map);<br>
-&nbsp;&nbsp;&nbsp;return true;<br>
-&nbsp;&nbsp;&nbsp;}<br>
+ds_list_destroy(list);<br>
+ds_map_destroy(resultMap);<br>
 </p>
 <p>
-The above script will parse a string using <tt>json_decode</tt>. It then checks to see if the resulting map contains the key "default" and if it does then it returns "false", indicating that the input string is 
-not a valid JSON object format, and destroys the ds_map. However if it does not have a default value, the returned ds_map is then used to get the user name, the current user score and the current highscore 
-<i>list</i> which are all copied into global variables. The decoded map (and the list it contains) are then destroyed to prevent memory leaks and a value of "true" returned to indicate that the operation has 
-been successful.
+The above code will decode a JSON string and parse it to generate a global array. 
 </p>
 
 <p>

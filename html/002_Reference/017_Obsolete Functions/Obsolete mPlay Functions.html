@@ -33,7 +33,7 @@ These functions deal with multi player/internet information transfer.
 	<tr class="alt"><td>mplay_init_modem</td><td>Initializes a modem connection. initstr is the initialization string for the modem (can be empty). phonenr is a string that contains the phone number 
 	to ring (e.g. '0201234567'). Only when joining a session (see below) do you need to provide a phone number.</td></tr>
 
-	<tr><td>mplay_init_serial</td><td>Initializes a serial connection. portno is the port number (1-4). baudrate is the baudrate to be used (100-256K). stopbits indicates the number of stopbits (0 = 1 bit, 
+	<tr><td>mplay_init_serial</td><td>Initializes a serial connection. portno is the port number (1-4). baudrate is the baud rate to be used (100-256K). stopbits indicates the number of stopbits (0 = 1 bit, 
 	1 = 1.5 bit, 2 = 2 bits). parity indicates the parity (0=none, 1=odd, 2=even, 3=mark). And flow indicates the type of flow control (0=none, 1=xon/xoff, 2=rts, 3=dtr, 4=rts and dtr). Returns whether successful. 
 	A typical call is mplay_init_serial(1,57600,0,0,4). Give 0 as a first argument to open a dialog for the user to change the settings.</td></tr>
 	

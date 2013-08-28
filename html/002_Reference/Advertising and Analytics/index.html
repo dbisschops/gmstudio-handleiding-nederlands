@@ -74,7 +74,7 @@ The following functions exist for ads from these companies:
 
 <h3>Testing Ads</h3>
 <p>
-Certain providers provide the possibility to test ads on your device before you actually finalize their use and so <i>GameMaker:Studio</i> inlcudes the option to switch testing on in the 
+Certain providers provide the possibility to test ads on your device before you actually finalize their use and so <i>GameMaker:Studio</i> includes the option to switch testing on in the 
 <a href="../../001_Advanced Use\Global game settings\Advertising Tab.html">Global Game Settings - Advertising Tab</a>. This option will affect your app differently depending on the target platform and 
 the provider selected.
 
@@ -95,10 +95,10 @@ the provider selected.
 				The <i>device id</i> number should then be copied into the appropriate space on the Advertising tab of the global Game Settings, and you should now flag the "test Ads" check-box to switch ad testing 
 				on. When you run your game again, this will be confirmed to be working by the ADB console output showing the message “Admob using test adverts”.</li><br>
 			
-				<li><b>Ad Colony</b> - You can see their test videos and offerwalls by configuring the test options through your pofile page on their site <a href="http://www.adcolony.com/">
+				<li><b>Ad Colony</b> - You can see their test videos and offerwalls by configuring the test options through your profile page on their site <a href="http://www.adcolony.com/">
 				http://www.adcolony.com/</a></li><br>
 				
-				<li><b>Millennial Media</b> - You should set the key0 app id to be "<b>28911</b>" and flag the "Test Ads" check-box to start receiveing test ads on your device. This will also raise the number of 
+				<li><b>Millennial Media</b> - You should set the key0 app id to be "<b>28911</b>" and flag the "Test Ads" check-box to start receiving test ads on your device. This will also raise the number of 
 				event logs that are registered to make debugging easier.</li>
 				
 			</ul>
@@ -124,7 +124,7 @@ the provider selected.
 		
 	<h4>HTML5</h4>
 	<p>
-	Currently the support for testing ads on HTML5 has to be configured through the contol panel of your developer account with the chosen company, with the "Test Ads" option in the Global Game Settings 
+	Currently the support for testing ads on HTML5 has to be configured through the control panel of your developer account with the chosen company, with the "Test Ads" option in the Global Game Settings 
 	doing nothing at the moment. It is simply provided to make integrating future advertising partners easier.
 	<br>
 	<br>
@@ -132,11 +132,34 @@ the provider selected.
 	<h4>Windows Phone</h4>
 	<p>
 	To test ads with Windows phone, you will need to still input the different ad unit ids that you wish to have (either with real ids from the Microsoft pubCenter or with "fake" values which the SDK will use to 
-	simlulate a real ad) into the different sections and select the ad type you wish to display. Then tick the "Test Ads" option in the Global game Settingds to see them. Note that the emulator will <i>always</i> 
+	simulate a real ad) into the different sections and select the ad type you wish to display. Then tick the "Test Ads" option in the Global game Settings to see them. Note that the emulator will <i>always</i> 
 	show test ads, no matter what settings you have.
 	<br>
 	<br>
 	
+</blockquote>
+
+<h3>PlayHaven</h3>
+<p>
+PlayHaven is a content provider for <b>iOS</b> and <b>Android</b> that permits you to show interstitial ads with a wide variety of content available - cross promotion of games, paid ads, user data requests 
+and a lot more besides. Accessing all this functionality can be achieved via a very few function calls from within <i>GameMaker:Studio</i>, but to get them to work correctly you will have to have created a PlayHaven 
+account and set up <b>content</b> to be displayed.
+<blockquote>
+	<i>Further information on PlayHaven setup and integration can be found on the <a href="http://help.yoyogames.com/forums/22239281-Ads-and-Analytics" target="_blank">YoYo Games Knowledge 
+	Base</a>.</i>
+</blockquote>
+<p>
+The following functions can be used in your games to access PlayHaven content:
+<blockquote>
+	<ol>
+		<li><a href="ads_event.html">ads_event</a><br> 
+		<li><a href="ads_event_preload.html">ads_event_preload</a><br> 
+		<li><a href="ads_set_reward_callback.html">ads_set_reward_callback</a><br>
+		<li><a href="playhaven_add_notification_badge.html">playhaven_add_notification_badge</a><br>
+		<li><a href="playhaven_hide_notification_badge.html">playhaven_hide_notification_badge</a><br>
+		<li><a href="playhaven_position_notification_badge.html">playhaven_position_notification_badge</a><br>
+		<li><a href="playhaven_update_notification_badge.html">playhaven_update_notification_badge</a><br>
+	</ol>
 </blockquote>
 
 <h3>Pocket Change</h3>
@@ -144,11 +167,13 @@ the provider selected.
 Pocket Change is a universal loyalty currency which permits you to Gift users Pocket Change tokens by playing your games and these tokens travel with the user between games. The user can then exchange them 
 for real world gifts, like discount cards and specialist products meaning that this is an excellent option when you are thinking about user retention. The Pocket Change integrated api for <i>GameMaker:Studio</i> 
 is incredibly simple to use, but will require that you are <a href="https://pocketchange.com/" target="_blank">signed up for the Pocket Change</a> service first.
-<br>
-<br>
+<blockquote>
+	<i><b>NOTE: </b>Pocket Change on Android requires version 4.2 or higher to work, therefore any device with a lower version number will not show any messages and the functions will simply do nothing.</i>
+</blockquote>
 
+<p>
 When you have done that, you can use the following functions in your games (don't forget to set up the game correctly in the 
-<a href="../../001_Advanced%20Use/Global%20game%20settings/PocketChange%20Tab.html">Global Game Settings - Pocket Change Tab</a>):
+<a href="../../001_Advanced Use/Global game settings/Extras Tab.html">Global Game Settings - Pocket Change Tab</a>):
 <blockquote>
 	<ol>
 		<li><a href="pocketchange_display_reward.html">pocketchange_display_reward</a><br> 
@@ -160,7 +185,7 @@ When you have done that, you can use the following functions in your games (don'
 <p>
 Your game can be tracked by different Analytics providers (principally <a href="http://www.flurry.com/" target="_blank">Flurry</a> and <a href="http://www.google.com/analytics/" target="_blank">
 Google Analytics</a>) which can be set up in the special <a href="../../001_Advanced%20Use/Global%20game%20settings/Analytics%20Tab.html">Global Game Settings - Analytics Tab</a>. In general, the analytics 
-are autonomoous, with each provider tracking the product and making the information available through their own web pages, but there are two extra functions supplied by <i>GameMaker:Studio</i> to 
+are autonomous, with each provider tracking the product and making the information available through their own web pages, but there are two extra functions supplied by <i>GameMaker:Studio</i> to 
 permit you to send a text event to the analytics provider which you can then use to track special features from within your game:
 <blockquote>
 	<ol>
@@ -193,4 +218,5 @@ advertising
 offerwall
 virtual currency
 Pocket Change
+PlayHaven
 -->

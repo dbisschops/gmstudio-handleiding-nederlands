@@ -59,7 +59,7 @@ This ds_map has the following structure:
 	<li><b>URL : </b>The complete URL you requested.</li><br>
 	<li><b>result : </b>The data received (string only).</li><br>
 	<li><b>http_status : </b>The raw http status code (if available). This returns the standard web status code for most browsers, eg: 304 for "Not Modified" or 204 for "No Content", etc...</li><br>
-	<li><b>id : </b>The ID which was returned from the command. If you fire off a series of <tt>http_</tt> requests then you need to know which one you are getting the reply to, and so you would 
+	<li><b>id : </b>The id which was returned from the command. If you fire off a series of <tt>http_</tt> requests then you need to know which one you are getting the reply to, and so you would 
 	use this value to compare to the value you stored when you originally sent the request to find the right one.</li><br>
 	<li><b>status : </b> Returns a value of less than 0 for an error.</li><br>
 </ol>

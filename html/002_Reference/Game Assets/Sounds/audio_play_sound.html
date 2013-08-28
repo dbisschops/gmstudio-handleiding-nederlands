@@ -47,7 +47,7 @@
 
 <h3>Description</h3>
 <p>
-With this function you can play any sound resource that is not background music (for that use <a href="audio_play_music.html"><tt>audio_play_music</tt></a>). You provide the sound index and asign it a 
+With this function you can play any sound resource that is not background music (for that use <a href="audio_play_music.html"><tt>audio_play_music</tt></a>). You provide the sound index and assign it a 
 priority, which is then used to determine how sounds are dealt with when the number of sounds playing is over the limit set by the function <a href="audio_channel_num.html">
 <tt>audio_channel_num</tt></a>. Lower priority sounds will be stopped in favour of higher priority sounds, and the priority value can be any real number (the actual value is arbitrary, and can be from 0 
 to 1 or 0 to 100, as <i>GameMaker:Studio</i> will prioritise them the same). The final argument is for making the sound loop and setting it to <tt>true</tt> will make the sound loop until it is stopped 

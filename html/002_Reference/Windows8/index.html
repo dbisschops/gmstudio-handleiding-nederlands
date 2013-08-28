@@ -22,10 +22,20 @@ Windows 8 desktop and Surface platforms, <i>not</i> Windows 8 Phone. For Windows
 </blockquote>
 
 <p>
-<i><b>NOTE : </b>Although the Windows 8 target is similar to the HTML5 one, it won't allow multiple instances of the same app to run at a time, and if the file is running it can't overwrite it. This means that you 
-will have to close the app before saving/testing a new version.</i>
+<i><b>NOTE : </b>The Windows 8 (JS and Native) target won't allow multiple instances of the same app to run at a time, and if the file 
+is running it can't overwrite it. This means that you will have to close the app before saving/testing a new version, and even then you 
+may have to wait a short period of time between builds to enable Windows to close the app correctly.</i>
 <br>
 <br>
+
+Windows 8 games can run on devices that may, or may not, have a touch screen. This means that your games have to be developed with this 
+in mind. To make things easier for you there is a special function for detecting whether the device running the game is touch enabled or 
+not:
+<blockquote>
+	<ol>
+		<li><a href="win8_device_touchscreen_available.html">win8_device_touchscreen_available</a><br>
+	</ol>
+</blockquote>
 
 <h3>Live Tiles</h3>
 <p>
@@ -140,6 +150,17 @@ Windows 8 can permit your game to search through the system as you would any oth
 	</ol>
 </blockquote>
 
+<h3>Trial Play</h3>
+<p>
+The Windows 8 App Store permits your game to be marketed with a <i>trial period</i>. This will let people play your game for a limited time with (if you choose) limited features and then, at the end of the trial 
+period, it will prompt the user to buy the full version. The following functions can be used in your games:
+<blockquote>
+	<ol>
+		<li><a href="win8_license_trial_version.html">win8_license_trial_version</a><br>
+		<li><a href="win8_license_initialize_sandbox.html">win8_license_initialize_sandbox</a><br>
+	</ol>
+</blockquote>
+
 <p>
 <br>
 </p>
@@ -168,9 +189,11 @@ sharing
 app-bar
 search
 settings charm
+trial
 Windows 8 Live Tiles
 Windows 8 Sharing
 Windows 8 App Bar
 Windows 8 Search
 Windows 8 Settings Charm
+Windows 8 Trial Play
 -->

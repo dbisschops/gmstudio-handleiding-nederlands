@@ -28,7 +28,9 @@
 
 <h3>Description</h3>
 <p> 
-This <b>read-only</b> variable returns the index of the action currently being executed, starting at 0. So, if you have an event with three action blocks in it, then check this variable on the third, it will return 2.
+This <b>read-only</b> variable returned the index of the action currently being executed, starting at 0 on previous versions of GameMaker. However, 
+this is <b>now an obsolete function</b> in <i>GameMaker:Studio</i>. It has been left in for legacy support only, and will 
+<b>always return 0</b> as all actions are concatenated together to improve execution speed.
 <br>
 <br>
 

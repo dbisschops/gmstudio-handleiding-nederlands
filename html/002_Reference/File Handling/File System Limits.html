@@ -13,7 +13,7 @@
 
 <p>
 When using the file system functions included with <i>GameMaker:Studio</i> it is vitally important to know exactly how everything works and what things are going on behind the scenes. To that end, 
-this section is designed to explain and clarify exactly how things are stored, where they are stored and what possible limits or work-arounds there may be to this system.
+this section is designed to explain and clarify exactly how things are stored, where they are stored and what possible limits or workarounds there may be to this system.
 <br>
 <br>
 
@@ -55,7 +55,7 @@ To start with, you should understand what is meant when we talk of the <a href="
 diagram above) and when you use that directory it will do one of two things depending on whether you are reading or writing, and whether the file you are reading from has been changed or not:
 <blockquote>
 	<ol>
-		<li><b>Reading Operations</b> - <tt>working_directory</tt> will first check the save area to see if the file being accessed is there, and if it is is uses that. However if the file does not exists in the save 
+		<li><b>Reading Operations</b> - <tt>working_directory</tt> will first check the save area to see if the file being accessed is there, and if it is uses that. However if the file does not exists in the save 
 		area, it then checks the file bundle area and uses that (if the file being looked for is an included file with your game).
 		
 		<li><b>Writing Operations</b> - This can only happen in the save area.

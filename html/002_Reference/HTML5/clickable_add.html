@@ -64,9 +64,9 @@ GameMaker:Studio</i> itself.
 <br>
 
 You must first set the position, which is relative to the (0,0) of the browser window (top left corner) and then give the texture page entry for the sprite you wish the button icon to have (see: 
-<a href="../Game%20Assets/Sprites/sprite_get_tpe.html"><tt>sprite_get_tpe</tt></a>). You can then specify either a URL to open or a script (from the rsource tree of <i>GameMaker:Studio</i>) to be opened 
+<a href="../Game%20Assets/Sprites/sprite_get_tpe.html"><tt>sprite_get_tpe</tt></a>). You can then specify either a URL to open or a script (from the resource tree of <i>GameMaker:Studio</i>) to be opened 
 or run. The "target" parameter that you specify is the same as the standard JavaScript "name" value when you use the <tt>open()</tt> method (be aware that all but '_self' may result in the browser blocking, 
-or asking the user if they wish to allow it) and the "params" argument is the same as the JavaScript "specs" prameter for controlling what properties the new window/tab should display (not all browsers may support 
+or asking the user if they wish to allow it) and the "params" argument is the same as the JavaScript "specs" parameter for controlling what properties the new window/tab should display (not all browsers may support 
 all features). If you are using the icon to run an internal script, these last two arguments can be left as empty strings "".
 <br>
 <br>
@@ -144,10 +144,10 @@ into an html5 event. <i>GameMaker:Studio</i> function names are <i>not</i> obfus
 
 <h3>Example :</h3>
 <p class="code">
-home_but = clickable_add(32, 32, sprite_get_tpe(spr_MS_Home, 0), "http://macsweeney_games.com", "_blank", "width=700, height=500, menubar=0, toobar=0, scrollbars=0");
+home_but = clickable_add(32, 32, sprite_get_tpe(spr_MS_Home, 0), "http://macsweeney_games.com", "_blank", "width=700, height=500, menubar=0, toolbar=0, scrollbars=0");
 </p>
 <p>
-The above code creates a clickable DOM icon at the positon (32, 32) of the page that the game canvas is running on. The icon uses the sprite referenced from the texture page as "spr_MS_Home" and 
+The above code creates a clickable DOM icon at the position (32, 32) of the page that the game canvas is running on. The icon uses the sprite referenced from the texture page as "spr_MS_Home" and 
 when clicked the icon will open a new window for the specified URL and with the defined properties for that window.
 </p>
 

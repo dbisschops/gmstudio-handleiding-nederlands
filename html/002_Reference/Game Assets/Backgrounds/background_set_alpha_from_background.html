@@ -45,7 +45,7 @@
 <h3>Description</h3>
 <p>
 This function uses the value/saturation of one background and multiplies it with the alpha of the target background. Ideally the background being used to generate the new alpha map should be greyscale, with 
-the white areas having an equivalent alpha value of 1 (opaque), the black areas being equivalent to alpha 0 (transparent), and the grey areas being an alpha inbetween 0 and 1. The background that 
+the white areas having an equivalent alpha value of 1 (opaque), the black areas being equivalent to alpha 0 (transparent), and the grey areas being an alpha in between 0 and 1. The background that 
 you are setting the alpha of <i>cannot be a permanent resource</i> as this will give an error, so you should be using the <a href="background_duplicate.html"><tt>background_duplicate</tt></a> 
 function first to duplicate the resource and then set the alpha on that. You will also need to duplicate the source image to be used with the same function, then set the alpha using both the duplicated images. 
 Below is an image that illustrates how this function works with sprites, but the same is true for backgrounds:

@@ -26,7 +26,7 @@ have to be the case). So, basically, it's a way to communicate with some externa
 <br>
 <br>
 
-Why is this important? Well, since it allows GameMaker:Studio to continue functioning while sending or recieiving data, and this means that you can do many things all without blocking the game loop like - 
+Why is this important? Well, since it allows GameMaker:Studio to continue functioning while sending or receiving data, and this means that you can do many things all without blocking the game loop like - 
 <br>
 <br>
 
@@ -78,7 +78,7 @@ if ($http_origin == "http://127.0.0.1:51268")<br>
 <h3>Dialogues</h3>
 <p>
 Previous versions of <i>GameMaker</i> had pop-up dialogues that blocked the runner while waiting for a response from the user. However most modern devices do not like this and will interpret 
-the runner stopping as an error and close the app. To prevent this <i>GameMaker:Studio</i> has async equivalents of these functions that fullfill the same purpose as previous versions, but do not 
+the runner stopping as an error and close the app. To prevent this <i>GameMaker:Studio</i> has async equivalents of these functions that fulfill the same purpose as previous versions, but do not 
 block the game runner at any time, meaning that when called the game will run as normal in the background while the user responds to the shown dialogue. Once the user has responded, a 
 <a href="../../001_Advanced%20Use/More%20About%20Async%20Events/Dialogs.html">Dialogs Asynchronous Event</a> will be called so that you can deal with the results.
 <br>

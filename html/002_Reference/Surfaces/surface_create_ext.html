@@ -57,7 +57,7 @@ of how a page with three canvas elements would be set up:
 
 <img class="center" src="surface_ext_1.png"></img>
 
-The page layout can be tricky, especially if you wish all the elements to line up correctly, but once the the hard task of creating the layout has been completed, you can then add this <tt>html</tt> file as 
+The page layout can be tricky, especially if you wish all the elements to line up correctly, but once the hard task of creating the layout has been completed, you can then add this <tt>html</tt> file as 
 the default page file for the game using the <a href="../../001_Advanced%20Use/Global%20game%20settings/HTML5%20Tab.html">HTML5 Tab</a> of the <a href="../../001_Advanced%20Use/Global%20game%20settings/index.html">
 Global Game Settings</a>. The next thing you should do is set up your room and views, as each surface will need to be associated with a specific view to "capture" the game images (see the view variable 
 <a href="../Windows%20And%20Views/Views/view_surface_id.html"><tt>view_surface_id[0...7]</tt></a>). The image below shows how the game room for the above canvas example would be set out:
@@ -66,7 +66,7 @@ Global Game Settings</a>. The next thing you should do is set up your room and v
 
 Finally you would then use this function to create the surfaces, with the name being the same as that used for the canvas elements and the size corresponding to the size of that same canvas. The function 
 will return the index of the surface which should be stored in a variable for future function calls. When the surface is first created, it may contain "noise" as basically it is just an area of memory that is put aside 
-for the purppose (and that memory may still contain information), so you may want to clear the surface before use with a function like <a href="../Drawing/Color%20And%20Blending/draw_clear_alpha.html">
+for the purpose (and that memory may still contain information), so you may want to clear the surface before use with a function like <a href="../Drawing/Color%20And%20Blending/draw_clear_alpha.html">
 <tt>draw_clear_alpha</tt></a>.
 <br>
 <br>
