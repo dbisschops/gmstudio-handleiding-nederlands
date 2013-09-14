@@ -28,7 +28,7 @@ Om de vertaling zo consistent mogelijk te houden, zijn er een aantal richtlijnen
 
 8.  Let op als je speciale tekens zoals ë wil gebruiken. Als je dit doet, moet je zorgen dat je editor ingesteld is in UTF-8, dit is de encoding die we voor alle pagina's gebruiken.
     In b.v. Notepad++ kan je dit instellen per bestand, of globaal bij Preferences (aangeraden).
-    Als je editor dat niet kan, moet je een html entity gebruiken zoals &#235; (=ë), meer informatie: http://www.handleidinghtml.nl/html/karakters/karakters03.html
+    Als je editor dat niet kan, moet je een html entity gebruiken zoals &amp;#235; (=ë), meer informatie: http://www.handleidinghtml.nl/html/karakters/karakters03.html
 
 9.  Ga niet op elke pagina zetten wie het vertaald heeft. We verzamelen de namen van vertalers op één plaats (google docs) en op het einde voegen we deze lijst toe als een apart bestand in de handleiding.
 
