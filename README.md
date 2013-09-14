@@ -34,7 +34,7 @@ Deze richtlijnen zullen waarschijnlijk worden aangevuld naarmate de vertaling vo
 GitHub voor dummies
 -------------------
 
-Ik zal kort uitleggen hoe je aanpassingen kan maken aan deze handleiding via GitHub, in je browsers. Git-kenners kunnen ook op een lokale kopie werken, maar dat is complexer.
+Ik zal kort uitleggen hoe je aanpassingen kan maken aan deze handleiding via GitHub, in je browser. Git-kenners kunnen ook op een lokale kopie werken, maar dat is complexer.
 
 1.  Maak een GitHub-account als je die nog niet hebt, en log in.
 
@@ -47,3 +47,5 @@ Ik zal kort uitleggen hoe je aanpassingen kan maken aan deze handleiding via Git
 5.  Als je een deel van de handleiding vertaald hebt en je bent tevreden, stuur mij dan een 'pull request'. Volg [deze stappen](https://help.github.com/articles/creating-a-pull-request) om een pull request te maken. Ik zal deze ontvangen en als alles in orde is samenvoegen met de originele repository.
 
     Maak alsjeblieft geen aparte pull request aan voor elke zin die je aanpast, tenzij het niet anders kan. Probeer een bepaald bestand (of onderwerp) volledig te vertalen voor je het doorstuurt.
+
+Als het je echt niet lukt, stuur mij dan gewoon een bericht (met een link naar je fork of desnoods met het bestand zelf) en dan doe ik het wel manueel.
