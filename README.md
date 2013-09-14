@@ -26,7 +26,11 @@ Om de vertaling zo consistent mogelijk te houden, zijn er een aantal richtlijnen
 
 7.  Het is het beste als meerdere bestanden van hetzelfde onderwerp vertaald worden door dezelfde persoon, dit geeft een consistentere vertaling.
 
-8.  Vergeet niet dat je in HTML niet zomaar speciale tekens kunt gebruiken, speciale tekens moet je hashen, je plaatst in plaats van het teken een specifieke tekenreeks zoals &#235; (=ë), meer informatie: http://www.handleidinghtml.nl/html/karakters/karakters03.html
+8.  Let op als je speciale tekens zoals ë wil gebruiken. Als je dit doet, moet je zorgen dat je editor ingesteld is in UTF-8, dit is de encoding die we voor alle pagina's gebruiken.
+    In b.v. Notepad++ kan je dit instellen per bestand, of globaal bij Preferences (aangeraden).
+    Als je editor dat niet kan, moet je een html entity gebruiken zoals &#235; (=ë), meer informatie: http://www.handleidinghtml.nl/html/karakters/karakters03.html
+
+9.  Ga niet op elke pagina zetten wie het vertaald heeft. We verzamelen de namen van vertalers op één plaats (google docs) en op het einde voegen we deze lijst toe als een apart bestand in de handleiding.
 
 Deze richtlijnen zullen waarschijnlijk worden aangevuld naarmate de vertaling vordert.
 
