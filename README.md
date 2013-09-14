@@ -26,6 +26,8 @@ Om de vertaling zo consistent mogelijk te houden, zijn er een aantal richtlijnen
 
 7.  Het is het beste als meerdere bestanden van hetzelfde onderwerp vertaald worden door dezelfde persoon, dit geeft een consistentere vertaling.
 
+8.  Vergeet niet dat je in HTML niet zomaar speciale tekens kunt gebruiken, speciale tekens moet je hashen, je plaatst in plaats van het teken een specifieke tekenreeks zoals &#235; (=ë), meer informatie: http://www.handleidinghtml.nl/html/karakters/karakters03.html
+
 Deze richtlijnen zullen waarschijnlijk worden aangevuld naarmate de vertaling vordert.
 
 
